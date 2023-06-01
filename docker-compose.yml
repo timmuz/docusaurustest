@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  docusaurus:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/docusaurus
+    ports:
+      - "8080:80"
